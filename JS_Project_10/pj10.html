@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+        html,body{
+         width: 100%;
+         height: 100%;
+        }
+        .main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      
+        }
+        .slider{
+            width: 60%;
+            height: 60%;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        .controller{
+            display: flex;
+        }
+        button{
+            padding: 8px 23px;
+            margin-top: 42px;
+            cursor: pointer;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="slider">
+            <img class="slideimage" src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+            <img class="slideimage" src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+            <img class="slideimage" src="https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+            <img class="slideimage" src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+        </div>
+        <div class="cntroller">
+            <button id="stop">Stop</button>
+            <button onclick="myInterval()">Start</button>
+        </div>
+    </div>
+    <script src="pj10.js"></script>
+</body>
+</html>

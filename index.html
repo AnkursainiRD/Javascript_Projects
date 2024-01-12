@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+         *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    }
+    html,body{
+    width: 100%;
+    height: 100%;
+    }
+    .nav{
+      width: 100vw;
+      height: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-2{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .nav-2>a{
+      text-decoration: none;
+      color: #000;
+      font-size: 1vw;
+      transition: 0.3s all ease;
+    }
+    a:hover{
+      background-color: greenyellow;
+      padding: 12px 23px;
+
+    }
+    .d-down{
+      display: block;
+      display: none;
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        padding: 12px 90px;
+        justify-content: center;
+    }
+    .card{
+      width: 15%;
+      height: 48%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      align-items: center;
+      gap: 5px;
+    }
+    .card>img{
+      width: 100%;
+      height: 55%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .socialmedia{
+      margin-top: 22px;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="nav">
+        <h1>Logo</h1>
+       <div class="nav-2">
+         <a href="">Home</a>
+         <a href="">Section</a>
+         <a href="">Year</a>
+         <div class="d-down">
+          <a href="">2022</a>
+          <a href="">2023</a>
+          <a href="">2024</a>
+        </div>
+         <a href="">Log In</a>
+      </div>
+      
+    </div>
+
+    <!-- <div class="card">
+       <img id="photo" src="" alt="">
+       <h1 id="name">NAME</h1>
+       <h2 id="country">Country</h2>
+       <div class="socialmedia">
+          <h3 id="follower">Follower</h3>
+          <h3 id="repo">Repositry</h3>
+       </div>
+    </div> -->
+  </div>
+<script>
+   "use strict"
+  const obj={
+    name:"Ak",
+    fun:function(){
+      console.log(this);
+    }
+  }
+  const {fun}=obj
+  fun()
+  // let url='https://api.github.com/users/hiteshchoudhary'
+  // const xhr= new XMLHttpRequest() 
+  // xhr.open('GET',url)
+  // xhr.onreadystatechange=function(){
+  //   if(xhr.readyState === 4){
+  //     console.log('here')
+  //     const data=JSON.parse(this.responseText)
+  //     console.log(data);
+  //     document.querySelector('#name').innerHTML=data.name
+  //     document.querySelector("h2").innerHTML=`Location : ${data.location}`
+  //     document.querySelector('#photo').src=(data.avatar_url)
+  //     document.querySelector("#follower").innerHTML=`Followers : ${data.followers}`
+  //     document.querySelector("#repo").innerHTML=`Repoistry : ${data.public_repos}`
+  //   }
+  // }
+  // xhr.send()
+//   for(var i=0;i<=5;i++){
+//     function close(i){
+//         setTimeout(function(){
+//             console.log(i);
+//         },i*1000)
+//     }
+//     close(i)
+// }
+
+
+
+
+
+ 
+</script>
+  
+</body>
+<!-- <script>
+   function addName(name){
+    const myName=document.createElement("li")
+    myName.appendChild(document.createTextNode(`${name}`))
+    document.querySelector('.main').appendChild(myName)
+   }
+   addName('anshul')ch
+   addName('ankit')
+   addName('ankur')
+   function editName(name,val){
+    const eName=document.querySelector("li:nth-child(2)")
+    const newName=document.createElement('li')
+    newName.textContent=`${name}`
+    document.querySelector('li').appendChild(newName)
+   }
+   editName('kaif')
+
+   function revName(name){
+    const delName=document.querySelector("li:nth-child(3)")
+    delName.remove()
+   }
+   revName('kaif')
+</> -->
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 40%;
+            height: 50%;
+            background-color: greenyellow;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            color: #000000;
+            padding: 25px 30px;
+            }
+            .ansbox{
+                margin-top: 2vw;
+                width: 100%;
+                font-size:1.4vw;
+                display: flex;
+                gap: 20px;
+            }
+            h1{
+                margin-bottom: 3vw;
+                color: #000;
+            }
+            button{
+                width: 100%;
+                padding: 11px;
+                border: none;
+                background-color: #fff;
+                border-radius: 10px;
+                font-size: 1.3vw;
+                box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                margin-top: 2vw;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <h1 id="question">This is first Question ?</h1>
+            <div class="ansbox">
+                <input type="radio" id="a" name="Option">
+                <label for="a">First Option</label>
+            </div>    
+            <div class="ansbox">
+                <input type="radio" id="b" name="Option">
+                <label for="b">Second Option</label>
+            </div>
+            <div class="ansbox">
+                <input type="radio" id="c" name="Option">
+                <label for="c">Third Option</label>
+            </div>
+            <div class="ansbox">
+                <input type="radio" id="d" name="Option">
+                <label for="d">Fourth Option</label>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="js8.js"></script>
+</body>
+</html>

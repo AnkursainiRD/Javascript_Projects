@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 230px;
+            height: 230px;
+            background-color: rgb(75, 79, 79);
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="blue">Blue</div>
+        <div class="box" id="green">Green</div>
+        <div class="box" id="yellow">Yellow</div>
+        <div class="box" id="purple">Purple</div>
+    </div>
+
+    <script>
+        
+        const btn=document.querySelectorAll('.box')
+        btn.forEach(function(e){
+            e.addEventListener("click",function(){
+            const color=e.textContent
+            document.querySelector('.main').style.backgroundColor=color
+            })
+        })
+    </script>
+</body>
+</html>

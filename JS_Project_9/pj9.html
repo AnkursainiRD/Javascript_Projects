@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    html,body{
+         width: 100%;
+         height: 100%;
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card{
+        width:22vw;
+        height: 30vw;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+    }
+    .card>img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;   
+    }
+    #submit{
+        padding: 10px 54px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        box-shadow: rgba(34, 33, 33, 0.15) 0px 15px 25px, rgba(32, 32, 32, 0.05) 0px 5px 10px;
+    }
+    .details{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding:0px 5px ;
+        font-size: 0.7vw;
+    }
+    .searchbar{
+        width: 30%;
+        height: 40px;
+        position: absolute;
+        top: 23px;
+        transform: translateX(1%);
+        box-shadow: rgba(34, 33, 33, 0.15) 0px 15px 25px, rgba(32, 32, 32, 0.05) 0px 5px 10px;
+
+    }
+    .searchbar>input{
+        height: 100%;
+        font-size: 1vw;
+        width: 100%;
+        border: none;
+        display: flex;
+        text-align: center;
+        outline: none;
+    }
+    .details>span{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .details>span>img{
+        width: 10%;
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+    span>img:hover{
+        scale: 1.3;
+
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+         <div class="searchbar">
+            <input id="searchCity" type="text" placeholder="Search the city">
+         </div>
+        
+        <div class="card">
+            <img id="tempimage" alt="">
+            <h1 id="temp">40°C</h1>
+            <button id="submit">Get Weather</button>
+            <div class="details">
+                <h2 id="time">12:00</h2>
+                <span><img id="flip_card" src="down-arrow.png" alt=""></span>
+                <h2 id="location"> India</h2>
+            </div>
+        </div>
+    </div>
+    <script src="pj9.js"></script>
+</body>
+</html>
